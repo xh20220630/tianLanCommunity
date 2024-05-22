@@ -8,10 +8,7 @@ import com.github.paicoding.forum.service.user.repository.entity.UserFootDO;
 
 import java.util.Map;
 
-/**
- * @author YiHui
- * @date 2022/9/3
- */
+
 public interface NotifyService {
 
     /**

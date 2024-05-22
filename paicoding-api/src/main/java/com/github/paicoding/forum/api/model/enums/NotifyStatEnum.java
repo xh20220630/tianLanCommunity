@@ -2,10 +2,7 @@ package com.github.paicoding.forum.api.model.enums;
 
 import lombok.Getter;
 
-/**
- * @author YiHui
- * @date 2022/9/3
- */
+
 @Getter
 public enum NotifyStatEnum {
     UNREAD(0, "未读"),

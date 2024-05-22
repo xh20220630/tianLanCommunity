@@ -41,10 +41,10 @@ public class CommonConstants {
         {
             put(CATEGORY_ALL, new ArrayList<String>() {
                 {
-                    add("https://cdn.tobebetterjavaer.com/paicoding/8b5865e9461948aed4aacffc62adbae7.jpg");
-                    add("https://cdn.tobebetterjavaer.com/paicoding/71505c62fb6375cbbd62af63964b2ad4.jpg");
-                    add("https://cdn.tobebetterjavaer.com/paicoding/147915cdddea55ce37c2c5ecfc7c089e.jpg");
-                    add("https://cdn.tobebetterjavaer.com/paicoding/dee73c8810cb699ae1ec774a54612080.jpg");
+                    add("https://tuapi.eees.cc/api.php?category=dongman&type=302");
+                    add("https://tuapi.eees.cc/api.php?category={dongman,fengjing}&type=302");
+                    add("https://tuapi.eees.cc/api.php?category=fengjing&type=302");
+                    add("https://tuapi.eees.cc/api.php?category=biying&type=302");
                 }
             });
             put(CATEGORY_BACK_EMD, new ArrayList<String>() {

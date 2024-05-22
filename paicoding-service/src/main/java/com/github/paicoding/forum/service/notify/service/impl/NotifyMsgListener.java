@@ -17,10 +17,7 @@ import org.springframework.context.ApplicationListener;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
-/**
- * @author YiHui
- * @date 2022/9/3
- */
+
 @Slf4j
 @Async
 @Service

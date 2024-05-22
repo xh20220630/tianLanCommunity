@@ -22,7 +22,7 @@ public class BioFileDemo {
             FileWriter fileWriter = new FileWriter(filename);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
-            bufferedWriter.write("学编程就上技术派");
+            bufferedWriter.write("学编程就上天澜社区");
             bufferedWriter.newLine();
 
             System.out.println("写入完成");

@@ -154,7 +154,7 @@ public class SeoInjectService {
         List<SeoTagVo> list = seo.getOgp();
         Map<String, Object> jsonLd = seo.getJsonLd();
 
-        String title = "技术派 | " + user.getUserHome().getUserName() + " 的主页";
+        String title = "天澜社区 | " + user.getUserHome().getUserName() + " 的主页";
         list.add(new SeoTagVo("og:title", title));
         list.add(new SeoTagVo("og:description", user.getUserHome().getProfile()));
         list.add(new SeoTagVo("og:type", "article"));

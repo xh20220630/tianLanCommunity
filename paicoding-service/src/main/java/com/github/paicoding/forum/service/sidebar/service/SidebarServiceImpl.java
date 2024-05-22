@@ -91,10 +91,10 @@ public class SidebarServiceImpl implements SidebarService {
             );
         });
         return new SideBarDTO()
-                .setTitle("关于技术派")
-                // TODO 知识星球的
-                .setImg("https://cdn.tobebetterjavaer.com/paicoding/main/paicoding-zsxq.jpg")
-                .setUrl("https://paicoding.com/article/detail/169")
+                .setTitle("关于天澜社区")
+                // TODO 天澜社区简介
+                .setImg("https://tuapi.eees.cc/api.php?category={dongman,fengjing}&type=302")
+                .setUrl("/")
                 .setItems(items)
                 .setStyle(SidebarStyleEnum.NOTICE.getStyle());
     }

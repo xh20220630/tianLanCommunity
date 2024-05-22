@@ -17,10 +17,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-/**
- * @author YiHui
- * @date 2022/9/3
- */
+
 @Repository
 public class NotifyMsgDao extends ServiceImpl<NotifyMsgMapper, NotifyMsgDO> {
 

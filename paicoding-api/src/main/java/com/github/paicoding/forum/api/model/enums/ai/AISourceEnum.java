@@ -17,9 +17,9 @@ public enum AISourceEnum {
      */
     CHAT_GPT_4(1, "chatGpt4"),
     /**
-     * 技术派的模拟AI
+     * 天澜社区的模拟AI
      */
-    PAI_AI(2, "技术派"),
+    PAI_AI(2, "天澜社区"),
     /**
      * 讯飞
      */

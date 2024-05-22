@@ -31,7 +31,7 @@ public class UserAiDO extends BaseDO {
     private String starNumber;
 
     /**
-     * 星球来源 1=java进阶之路 2=技术派
+     * 星球来源 1=java进阶之路 2=天澜社区
      */
     private Integer starType;
 
@@ -55,7 +55,7 @@ public class UserAiDO extends BaseDO {
      * 第0位： = 1 表示已绑定微信公众号<br/>
      * 第1位： = 1 表示绑定了邀请用户<br/>
      * 第2位： = 1 表示绑定了java星球<br/>
-     * 第3位： = 1 表示绑定了技术派星球
+     * 第3位： = 1 表示绑定了天澜社区星球
      */
     private Integer strategy;
 

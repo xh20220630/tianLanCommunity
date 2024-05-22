@@ -6,10 +6,7 @@ import com.github.paicoding.forum.api.model.enums.NotifyTypeEnum;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
-/**
- * @author YiHui
- * @date 2022/9/3
- */
+
 @Data
 @Accessors(chain = true)
 @TableName("notify_msg")

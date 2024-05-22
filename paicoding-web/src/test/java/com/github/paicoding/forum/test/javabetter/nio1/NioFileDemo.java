@@ -28,7 +28,7 @@ public class NioFileDemo {
         try {
             FileChannel fileChannel = FileChannel.open(path, EnumSet.of(StandardOpenOption.CREATE, StandardOpenOption.WRITE));
 
-            ByteBuffer buffer = StandardCharsets.UTF_8.encode("学编程就上技术派");
+            ByteBuffer buffer = StandardCharsets.UTF_8.encode("学编程就上天澜社区");
             fileChannel.write(buffer);
 
             System.out.println("写入完成");

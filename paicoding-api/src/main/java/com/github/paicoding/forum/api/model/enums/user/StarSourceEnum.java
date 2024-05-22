@@ -17,7 +17,7 @@ public enum StarSourceEnum {
      */
     JAVA_GUIDE(1),
     /**
-     * 技术派
+     * 天澜社区
      */
     TECH_PAI(2),
     ;

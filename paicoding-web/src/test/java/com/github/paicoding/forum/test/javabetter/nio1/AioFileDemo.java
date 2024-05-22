@@ -26,8 +26,8 @@ public class AioFileDemo {
             // 用 AsynchronousFileChannel.open() 打开文件通道，指定写入和创建文件的选项。
             AsynchronousFileChannel fileChannel = AsynchronousFileChannel.open(path, StandardOpenOption.WRITE, StandardOpenOption.CREATE);
 
-            // 将要写入的字符串（"学编程就上技术派"）转换为 ByteBuffer。
-            ByteBuffer buffer = StandardCharsets.UTF_8.encode("学编程就上技术派");
+            // 将要写入的字符串（"学编程就上天澜社区"）转换为 ByteBuffer。
+            ByteBuffer buffer = StandardCharsets.UTF_8.encode("学编程就上天澜社区");
             // 调用 fileChannel.write() 方法将 ByteBuffer 中的内容写入文件。这是一个异步操作，因此需要使用 Future 对象等待写入操作完成。
             Future<Integer> result = fileChannel.write(buffer, 0);
             // 等待写操作完成
