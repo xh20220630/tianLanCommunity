@@ -1,4 +1,4 @@
-<div class="home-carouse-wrap" id="carouseWrap">
+<div class="home-carouse-wrap" th:if="${vo.topArticles != null and !vo.topArticles.isEmpty()}" id="carouseWrap">
   <div class="home-carouse-inter-wrap">
     <div class="home-carouse-item" th:each="article,iter : ${vo.topArticles}">
       <a th:href="${'/article/detail/' + article.articleId}">
@@ -41,16 +41,28 @@
 <script src="/js/color-thief.umd.js" th:src="${global.siteInfo.oss + '/js/color-thief.umd.js'}"></script>
 
 <script>
+
+  const createImg = function (options) {
+    const {src, isCors = false} = options;
+    const newImg = document.createElement("img");
+    newImg.src = src;
+    isCors && newImg.setAttribute('crossOrigin', '');
+    return newImg;
+  }
   const img = document.getElementById("cover0")
   // 服务器 cdn 开启跨域消息头
-  img.setAttribute('crossOrigin', '')
+  // img.setAttribute('crossOrigin', '')
 
+  // 创建新的img 标签
+  const newImg = createImg({
+    src:"https://picsum.photos/200/300",
+    isCors:true
+  })
   // https://lokeshdhakar.com/projects/color-thief/#getting-started
   const colorThief = new ColorThief()
 
   function setColor() {
-    let color = colorThief.getColor(img)
-    console.log("newColor: ", color)
+    let color = colorThief.getColor(newImg)
 
     let rgb = "rgb(" + color[0] + "," + color[1] + "," + color[2] + ")"
     let div = document.getElementById("carouseWrap")
@@ -59,10 +71,10 @@
     $(".home-carouse-item-dot.tag").css("background", rgb)
   }
 
-  if (img.complete) {
+  if (newImg.complete) {
     setColor()
   } else {
-    img.addEventListener("load", function () {
+    newImg.addEventListener("load", function () {
       setColor()
     })
   }

@@ -2,7 +2,7 @@
 <html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
 <div th:replace="components/layout/header :: head(~{::title}, ~{}, ~{})">
     <title th:text="${global.siteInfo.websiteName}">
-        派聪明 | 技术派
+        派聪明 | 天澜社区
     </title>
 </div>
 
@@ -49,12 +49,12 @@
                     <div class="window-header-sub-title">与派聪明的 <span id="chatCnt">0</span> 条对话
                         <span class="info">以天为单位，无限期重置）</span></div>
                 </div>
-                <!-- 加一个下拉框，选项是 OpenAI 讯飞星火 技术派 -->
+                <!-- 加一个下拉框，选项是 OpenAI 讯飞星火 天澜社区 -->
                 <div class="chat-type">
                     <select class="styled-dropdown" id="chat-type">
                         <option value="XUN_FEI_AI" selected>讯飞星火</option>
                         <option value="CHAT_GPT_3_5">OpenAI</option>
-                        <option value="PAI_AI">技术派</option>
+                        <option value="PAI_AI">天澜社区</option>
                     </select>
                 </div>
             </div>

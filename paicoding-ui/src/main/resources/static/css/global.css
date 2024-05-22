@@ -1,9 +1,9 @@
-/*技术派的整体色系*/
+/*天澜社区的整体色系*/
 body {
   /*正常色*/
-  --pai-brand-1-normal: #ff6900;
+  --pai-brand-1-normal: #11b2e3;
   /*鼠标放上去后的颜色*/
-  --pai-brand-2-hover: #ff8721;
+  --pai-brand-2-hover: #072b44;
   /*点击后激活后的颜色*/
   --pai-brand-3-click: #f59e2f;
   /*不可用的颜色*/

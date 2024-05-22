@@ -30,7 +30,7 @@ const praiseComment = function (e,login) {
             toastr.error(data.message);
         }
 
-        let priaseCount = e.dataset.praiseCount;
+        let priaseCount = e.dataset.praiseCount/1;
         if(type == 2) {
             e.classList.add('active');
             priaseCount += 1;
